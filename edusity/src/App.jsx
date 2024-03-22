@@ -5,6 +5,9 @@ import Programs from './components/Programs/Programs'
 import Title from './components/Title/Title'
 import About from './components/About/About'
 import Campus from './components/Campus/Campus'
+import Testimonials from './components/Testimonials/Testimonials'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
     return (
@@ -12,12 +15,16 @@ const App = () => {
             <Navbar />
             <Hero />
             <div className="container">
-                <Title subTitle='Our Program' title='What We Offer'/>
+                <Title subTitle='Our Program' title='What We Offer' />
                 <Programs />
                 <About />
-                <Title subTitle='Gallery' title='Campus Photos'/>
+                <Title subTitle='Gallery' title='Campus Photos' />
                 <Campus />
-                <Title subTitle='Testimonials' title='What Students Says'/>
+                <Title subTitle='Testimonials' title='What Students Says' />
+                <Testimonials />
+                <Title subTitle='Contac us' title='Get in Touch'/>
+                <Contact />
+                <Footer />
             </div>
         </div>
     )
