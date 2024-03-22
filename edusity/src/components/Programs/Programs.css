@@ -12,12 +12,13 @@
     display: block;
 }
 
-.program{
-    flex-basis: 31%; /*initial value to the children elements*/ 
+.program {
+    flex-basis: 31%;
+    /*initial value to the children elements*/
     position: relative;
 }
 
-.caption{
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -36,12 +37,24 @@
     transition: 0.8s;
 }
 
-.caption img{
+.caption img {
     width: 60px;
     margin-bottom: 10px;
 }
 
-.program:hover .caption{
+.program:hover .caption {
     opacity: 1;
     padding-top: 0;
+}
+
+/*-----------media query responsive---------*/
+@media (max-width: 650px) {
+    .programs {
+        flex-direction: column;
+    }
+
+    .program {
+        flex-basis: 100%;
+        margin: 20px;
+    }
 }
